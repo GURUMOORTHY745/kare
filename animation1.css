@@ -1,0 +1,78 @@
+/* Apply the background image to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://www.sriramakrishnahospital.com/wp-content/uploads/2021/06/Blood-Donation-1.jpg');
+    background-size: cover;  /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the login container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with opacity for better readability */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    position: absolute;  /* Position it absolutely on the page */
+    right: 250px; /* Move the container 20px from the right edge */
+    top: 50%; /* Vertically center the container */
+    transform: translateY(-50%); /* Offset to exactly center it vertically */
+    animation: fadeIn 1s ease-in-out; /* Optional: animation effect for the login container */
+}
+
+/* Styling for the form labels and inputs */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6e7dff;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a6ecf;
+}
+
+/* Optional: Fade-in animation for the login form */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

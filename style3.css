@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.sriramakrishnahospital.com/wp-content/uploads/2021/06/Blood-Donation-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#full {
+    position: absolute;
+    top: calc(50% - 80px); /* Centering */
+    left: calc(50% + 20px); /* Move the box 20px to the right */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    animation: slideIn 0.5s ease-in-out; /* Slide-in effect */
+}
+
+#inner_full {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    width: 300px;
+    animation: fadeInUp 0.5s ease-in-out; /* Fade-in-up effect */
+}
+
+#header h1 {
+    text-align: center;
+    color: #b22222;
+    font-size: 18px;
+    animation: pulse 2s infinite; /* Pulsing effect */
+}
+
+#body {
+    margin-top: 10px;
+}
+
+h3 {
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+
+input[type="submit"], button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #b22222;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes glow {
+    0%, 100% { border-color: #ccc; }
+    50% { border-color: #b22222; }
+}

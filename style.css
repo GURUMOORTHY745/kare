@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border-color: #4CAF50; /* Keep the default outline for focus */
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 45px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+  transform: scale(1.02);
+}
+
+/* Donor Registration Styles */
+#donor_registration {
+  background-image: linear-gradient(to bottom, #e8f5e9, #c8e6c9);
+}
+
+/* Request Blood Styles */
+#request_blood {
+  background-image: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+}
+
+/* Additional Styles for Enhanced Readability */
+p {
+  text-align: center;
+  color: #666;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+table {
+  width: 80%; /* Adjust width */
+  margin: 20px auto; /* Center align */
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #b22222;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Highlight on hover */
+}
+
+/* Message styles */
+h2 {
+  color: #333;
+  margin-top: 20px;
+}
